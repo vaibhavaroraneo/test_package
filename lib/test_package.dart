@@ -1,7 +1,13 @@
 library test_package;
 
-/// A Calculator.
-class Calculator {
-  /// Returns [value] plus 1.
-  int addOne(int value) => value + 1;
+import 'src/user_storage.dart'; // Import the private file from src
+
+// Function 1: Create User Profile
+void createUserProfile(String name, String address, String phoneNumber) {
+  UserStorage.createUser(name, address, phoneNumber);
+}
+
+// Function 2: Get User Profile
+Map<String, String> getUserProfile(String userName) {
+  return UserStorage.getUserProfile(userName);
 }
