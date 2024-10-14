@@ -25,13 +25,12 @@ UserProfile? _getUser(String userName) {
   return _userDatabase[userName];
 }
 
-// Public interface to create a user
+// Public interface to create and get user profiles
 class UserStorage {
   static void createUser(String name, String address, String phoneNumber) {
     _createUser(name, address, phoneNumber);
   }
 
-  // Public interface to get user profile
   static Map<String, String> getUserProfile(String userName) {
     UserProfile? user = _getUser(userName);
     if (user != null) {

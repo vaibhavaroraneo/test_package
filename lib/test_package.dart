@@ -1,6 +1,6 @@
 library test_package;
 
-import 'src/_user_storage.dart'; // Import the private file from src
+import 'src/user_storage.dart'; // Import the private file
 
 // Function 1: Create User Profile
 void createUserProfile(String name, String address, String phoneNumber) {
